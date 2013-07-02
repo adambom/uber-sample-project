@@ -81,4 +81,4 @@ def update_entry(location_id):
     return jsonify(l.serialize())
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run('localhost', 5000, debug=True)
