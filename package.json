@@ -1,5 +1,5 @@
 {
-    "name": "Uber Favorites List",
+    "name": "uber-sample-project",
     "version": "0.0.1",
     "devDependencies": {
         "grunt": "~0.4.0",
