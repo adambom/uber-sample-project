@@ -1,0 +1,26 @@
+@import 'cosmo/variables.less';
+@import 'bootstrap/bootstrap.less';
+@import 'cosmo/bootswatch.less';
+@import 'jquery-ui-bootstrap/jquery-ui-bootstrap-custom-1.10.0.less';
+
+body {
+    padding: 60px 0 40px 0;
+    background: whitesmoke url(../img/bg.png);
+}
+
+#map {
+    height: 400px;
+
+    // Hack for collision with local styles and gmaps sprite sheets
+    img[src*="gstatic.com/"], img[src*="googleapis.com/"]  {
+        max-width: 99999px;
+    }
+}
+
+#search-locations {
+    margin: (@baseLineHeight / 2) 0;
+}
+
+.hidden {
+    display: none;
+}

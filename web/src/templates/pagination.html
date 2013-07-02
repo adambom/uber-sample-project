@@ -1,0 +1,9 @@
+<div class="pagination">
+    <ul>
+        <% if (!firstPage) { %><li><a href="javascript: void(0);" class="prevPage">Prev</a></li><% } %>
+        <% _.each(pagination, function (page) { %>
+            <li class="<%= page.className %>"><a href="javascript: void(0);" class="page" data-page="<%= page.label %>" ><%= page.label %></a></li>
+        <% }); %>
+        <% if (!lastPage) { %><li><a href="javascript: void(0);" class="nextPage">Next</a></li><% } %>
+    </ul>
+</div>
