@@ -23,9 +23,9 @@
                         });
                     });
                 }
-            } else {
-                this.drawMap();
             }
+
+            this.drawMap();
         }, 300),
 
         drawMap: function (mid) {
